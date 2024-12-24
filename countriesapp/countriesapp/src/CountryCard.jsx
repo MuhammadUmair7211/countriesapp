@@ -4,10 +4,11 @@ const CountryCard = ({ name, flags, population, region, capital }) => {
   return (
     <div className="container w-75">
       <a
+        href={`/country?name = ${name}`}
         className="card border-0 shadow mb-4 text-decoration-none"
         style={{ width: "15rem", height: "30rem" }}
       >
-        <img className="w-100" src={flags} alt="Card image cap" />
+        <img src={flags} alt="Card image cap" />
         <div className="card-text p-4">
           <h3 className="card-title mt-2">{name}</h3>
           <p>
